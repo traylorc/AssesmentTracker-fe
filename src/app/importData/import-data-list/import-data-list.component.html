@@ -4,8 +4,8 @@
     <thead>
         <tr>
             <th>Employee Id</th>
-            <th>Employee Lastname</th>
-            <th>Employee Firstname</th>
+            <th>Lastname</th>
+            <th>Firstname</th>
             <th>Hire Date</th>
             <th>Division</th>
             <th>Division Parent</th>
@@ -15,7 +15,6 @@
             <th>Attempt Date</th>
             <th>Score</th>
             <th>Assessment</th>
-            <th>Duration</th>
         </tr>
     </thead>
     <tbody>
@@ -23,16 +22,15 @@
             <td>{{d.employeeId}}</td>
             <td>{{d.employeeLastName}}</td>
             <td>{{d.employeeFirstName}}</td>
-            <td>{{d.hireDate}}</td>
+            <td>{{d.hireDate | date: 'shortDate'}}</td>
             <td>{{d.division}}</td>
             <td>{{d.divisionParent}}</td>
             <td>{{d.managerLastName}}</td>
             <td>{{d.managerFirstName}}</td>
             <td>{{d.testAttempt}}</td>
-            <td>{{d.attemptDate}}</td>
+            <td>{{d.attemptDate | date: 'shortDate'}}</td>
             <td>{{d.score}}</td>
             <td>{{d.assessment}}</td>
-            <td>{{d.duration}}</td>
         </tr>
     </tbody>
 </table>

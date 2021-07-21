@@ -1,5 +1,6 @@
 import { HttpClient, HttpEventType } from '@angular/common/http';
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-upload',
@@ -11,7 +12,11 @@ export class UploadComponent implements OnInit {
   public progress!: number;
   public message!: string;
   @Output() public onUploadFinished = new EventEmitter();
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
+
+   
+
+
   ngOnInit() {
   }
   public uploadFile = (files: any) => {
@@ -28,6 +33,7 @@ export class UploadComponent implements OnInit {
         else if (event.type === HttpEventType.Response) {
           this.message = 'Upload success.';
           this.onUploadFinished.emit(event.body);
+          this.router.navigateByUrl('/importdata/list');
         }
       });
   }
