@@ -16,6 +16,7 @@ import { ImportDataDetailComponent } from './importData/import-data-detail/impor
 import { ImportDataEditComponent } from './importData/import-data-edit/import-data-edit.component';
 import { ImportDataListComponent } from './importData/import-data-list/import-data-list.component';
 import { ImportDataUploadComponent } from './importData/import-data-upload/import-data-upload.component';
+import { UploadComponent } from './upload/upload.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ImportDataUploadComponent } from './importData/import-data-upload/impor
     ImportDataDetailComponent,
     ImportDataEditComponent,
     ImportDataListComponent,
-    ImportDataUploadComponent
+    ImportDataUploadComponent,
+    UploadComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule,

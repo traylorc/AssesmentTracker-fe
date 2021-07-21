@@ -11,7 +11,7 @@ import { UserListComponent } from './user/user-list/user-list.component';
 
 const routes: Routes = [
 
-  {path:'', redirectTo:'/user/list', pathMatch:'full'},
+  {path:'', redirectTo:'/importdata/upload', pathMatch:'full'},
 
   {path:'login', component: LoginComponent},
 
