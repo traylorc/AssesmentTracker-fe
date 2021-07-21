@@ -1,0 +1,38 @@
+#login-screen
+{
+    text-align: center;
+    width: 35%;
+    border:1px solid silver;
+    margin-left: 30%;
+    margin-top: 15%;
+    height: 45%;
+    
+}
+
+#email-password
+{
+    width:20%;
+    margin-right: 0%;
+    
+} 
+
+div{
+    display: inline-block;
+    
+}
+
+#email
+{
+    margin-bottom: 7px;
+}
+
+h4
+{
+ text-align: center;
+
+}
+
+button
+{
+    margin-bottom: 7px;
+}

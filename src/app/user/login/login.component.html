@@ -1,1 +1,24 @@
-<p>login works!</p>
+
+<div id="login-screen">
+    <h4>Login</h4>
+
+    <div id="email-password">
+        <p>Email : </p>
+        <p>Password :</p>
+    </div>
+    <div id="inputboxes">
+        <div id="email">
+            <input [(ngModel)]="email" type="text" placeholder="Email">
+        </div>
+        <br>
+        <div id="password">
+            <input [(ngModel)]="password" type="password" placeholder="Password">
+        </div>
+    </div>
+
+    <h4>{{message}}</h4>
+
+    <br>
+    <button (click)="login()" class="btn-btn-primary">Login</button>
+
+</div>
