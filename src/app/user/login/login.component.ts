@@ -10,6 +10,8 @@ import { UserService } from '../user.service';
 })
 export class LoginComponent implements OnInit {
 
+  loginButton: string ="btn btn-primary";
+
   email: string = "";
   password: string = "";
   message: string = "";
