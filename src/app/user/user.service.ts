@@ -27,7 +27,7 @@ export class UserService {
   }
   edit(user: User): Observable<User>
   {
-    return this.http.put(`${this.baseurl}/${user.id}`, user) as Observable<User>;
+    return this.http.put(`${this.baseurl}/${user.id}`, user) as Observable<any>;
   }
   remove(id:number): Observable<User>
   {

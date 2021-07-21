@@ -11,6 +11,11 @@ import { UserEditComponent } from './user/user-edit/user-edit.component';
 import { UserListComponent } from './user/user-list/user-list.component';
 import { LoginComponent } from './user/login/login.component';
 import { E404Component } from './misc/e404/e404.component';
+import { ImportDataCreateComponent } from './importData/import-data-create/import-data-create.component';
+import { ImportDataDetailComponent } from './importData/import-data-detail/import-data-detail.component';
+import { ImportDataEditComponent } from './importData/import-data-edit/import-data-edit.component';
+import { ImportDataListComponent } from './importData/import-data-list/import-data-list.component';
+import { ImportDataUploadComponent } from './importData/import-data-upload/import-data-upload.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { E404Component } from './misc/e404/e404.component';
     UserEditComponent,
     UserListComponent,
     LoginComponent,
-    E404Component
+    E404Component,
+    ImportDataCreateComponent,
+    ImportDataDetailComponent,
+    ImportDataEditComponent,
+    ImportDataListComponent,
+    ImportDataUploadComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule,
