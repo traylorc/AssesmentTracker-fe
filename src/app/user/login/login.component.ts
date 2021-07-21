@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
       res => {
         console.debug(res)
         this.syssvc.loggedInUser = res;
-        this.router.navigateByUrl("/user/list")
+        this.router.navigateByUrl("/importdata/list")
       },      
       err => {console.error(err);this.message = "Login Failed";}
     );
