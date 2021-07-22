@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { User } from '../user.class';
 import { UserService } from '../user.service';
 
@@ -11,8 +12,12 @@ export class UserListComponent implements OnInit {
 
   users: User[] = [];
 
-  constructor(private usersvc: UserService) { }
+  constructor(private usersvc: UserService, private router : Router) { }
 
+  clickRow(id: number): void {
+    console.log(`Clicked the row number ${id}!`);
+    this.router.navigateByUrl(`/user/edit/${id}`);
+  }
   ngOnInit(): void {
 
     this.usersvc.list().subscribe(
