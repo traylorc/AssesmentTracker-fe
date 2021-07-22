@@ -19,7 +19,7 @@
     </thead>
     <tbody>
         <tr *ngFor= "let d of iData">
-            <td>{{d.employeeId}}</td>
+            <a routerLink = "/importdata/detail/{{d.employeeId}}/{{d.hireDate}}">{{d.employeeId}}</a>
             <td>{{d.employeeLastName}}</td>
             <td>{{d.employeeFirstName}}</td>
             <td>{{d.hireDate | date: 'shortDate'}}</td>
