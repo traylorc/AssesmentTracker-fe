@@ -26,6 +26,16 @@ export class UserEditComponent implements OnInit {
     )
 
   }
+  delete(): void {
+    
+    this.usersvc.remove(this.id).subscribe(
+      res =>{console.debug("Success", res);
+      this.router.navigateByUrl("/user/list");
+  },
+  err =>{console.error(err);}
+    )
+
+  }
 
   ngOnInit(): void {
 

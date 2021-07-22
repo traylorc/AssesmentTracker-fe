@@ -16,17 +16,6 @@ export class UserDetailComponent implements OnInit {
 
   constructor(private syssvc: SystemService, private usersvc: UserService, private router: Router, private route: ActivatedRoute) { }
 
-  delete(): void {
-    
-    this.usersvc.remove(this.id).subscribe(
-      res =>{console.debug("Success", res);
-      this.router.navigateByUrl("/user/list");
-  },
-  err =>{console.error(err);}
-    )
-
-  }
-
   ngOnInit(): void {
 
     this.id = this.route.snapshot.params.id;
