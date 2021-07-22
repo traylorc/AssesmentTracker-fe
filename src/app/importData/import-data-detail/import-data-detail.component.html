@@ -1,1 +1,34 @@
-<p>import-data-detail works!</p>
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th>Employee Id</th>
+            <th>Lastname</th>
+            <th>Firstname</th>
+            <th>Hire Date</th>
+            <th>Division</th>
+            <th>Division Parent</th>
+            <th>Manager Lastname</th>
+            <th>Manager Firstname</th>
+            <th>Test Attempt</th>
+            <th>Attempt Date</th>
+            <th>Score</th>
+            <th>Assessment</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor= "let d of iData">
+            <td>{{d.employeeId}}</td>
+            <td>{{d.employeeLastName}}</td>
+            <td>{{d.employeeFirstName}}</td>
+            <td>{{d.hireDate | date: 'shortDate'}}</td>
+            <td>{{d.division}}</td>
+            <td>{{d.divisionParent}}</td>
+            <td>{{d.managerLastName}}</td>
+            <td>{{d.managerFirstName}}</td>
+            <td>{{d.testAttempt}}</td>
+            <td>{{d.attemptDate | date: 'shortDate'}}</td>
+            <td>{{d.score}}</td>
+            <td>{{d.assessment}}</td>
+        </tr>
+    </tbody>
+</table>

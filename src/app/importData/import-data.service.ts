@@ -16,9 +16,9 @@ export class ImportDataService {
   {
     return this.http.get(`${this.baseurl}`) as Observable<ImportData[]>;
   }
-  getByPk(employeeId: number): Observable<ImportData>
+  getByPk(employeeId: number, hireDate: string, testAttempt: number, assessment: string): Observable<ImportData>
   {
-    return this.http.get(`${this.baseurl}/${employeeId}`) as Observable<ImportData>;
+    return this.http.get(`${this.baseurl}/${employeeId}/${hireDate}/${testAttempt}/${assessment}`) as Observable<ImportData>;
   }
   create(iData: ImportData): Observable<ImportData>
   {
@@ -32,4 +32,8 @@ export class ImportDataService {
   {
     return this.http.delete(`${this.baseurl}/${employeeId}`) as Observable<ImportData>;
   }
+  getByEmployeeId(employeeId: number, hiredate: string): Observable<ImportData[]>
+    {
+      return this.http.get(`${this.baseurl}/${employeeId}/${hiredate}`) as Observable<ImportData[]>
+    }
 }
