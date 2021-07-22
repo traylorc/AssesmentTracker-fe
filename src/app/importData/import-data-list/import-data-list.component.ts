@@ -13,14 +13,19 @@ export class ImportDataListComponent implements OnInit {
 
   constructor(private idsvc: ImportDataService) { }
 
+refresh():void 
+{
+  console.log("Refresh ran!")
+  this.idsvc.list().subscribe(
+    res => {console.debug("Success", res);
+  this.iData = res;
+},
+err =>{console.error(err);}
+  );
+}
+
   ngOnInit(): void {
 
-    this.idsvc.list().subscribe(
-      res => {console.debug("Success", res);
-    this.iData = res;
-  },
-  err =>{console.error(err);}
-    )
+  this.refresh();
   }
-
 }
