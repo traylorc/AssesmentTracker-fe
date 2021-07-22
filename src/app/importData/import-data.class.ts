@@ -4,6 +4,7 @@ export class ImportData {
     employeeLastName: string = '';
     employeeFirstName: string = '';
     hireDate: string = '';
+    position: string = '';
     division: string = '';
     divisionParent: string = '';
     managerLastName: string = '';

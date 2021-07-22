@@ -4,13 +4,11 @@
     <thead>
         <tr>
             <th>Employee Id</th>
-            <th>Lastname</th>
-            <th>Firstname</th>
+            <th>Employee Name</th>
             <th>Hire Date</th>
             <th>Division</th>
             <th>Division Parent</th>
-            <th>Manager Lastname</th>
-            <th>Manager Firstname</th>
+            <th>Manager Name</th>
             <th>Test Attempt</th>
             <th>Attempt Date</th>
             <th>Score</th>
@@ -20,13 +18,11 @@
     <tbody>
         <tr *ngFor= "let d of iData">
             <a routerLink = "/importdata/detail/{{d.employeeId}}/{{d.hireDate}}">{{d.employeeId}}</a>
-            <td>{{d.employeeLastName}}</td>
-            <td>{{d.employeeFirstName}}</td>
+            <td>{{d.employeeFirstName}} {{d.employeeLastName}}</td>            
             <td>{{d.hireDate | date: 'shortDate'}}</td>
             <td>{{d.division}}</td>
             <td>{{d.divisionParent}}</td>
-            <td>{{d.managerLastName}}</td>
-            <td>{{d.managerFirstName}}</td>
+            <td>{{d.managerFirstName}} {{d.managerLastName}}</td>            
             <td>{{d.testAttempt}}</td>
             <td>{{d.attemptDate | date: 'shortDate'}}</td>
             <td>{{d.score}}</td>
