@@ -18,6 +18,7 @@ import { ImportDataListComponent } from './importData/import-data-list/import-da
 import { ImportDataUploadComponent } from './importData/import-data-upload/import-data-upload.component';
 import { UploadComponent } from './upload/upload.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BannerComponent } from './misc/banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ImportDataEditComponent,
     ImportDataListComponent,
     ImportDataUploadComponent,
-    UploadComponent
+    UploadComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule,
