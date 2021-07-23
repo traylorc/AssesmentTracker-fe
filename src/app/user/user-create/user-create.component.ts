@@ -21,7 +21,7 @@ export class UserCreateComponent implements OnInit {
       res =>{console.debug("Success", res);
       this.router.navigateByUrl("/user/list");
   },
-  err =>{console.error(err);}
+  err =>{console.error(err),this.user;}
     )
 
   }
