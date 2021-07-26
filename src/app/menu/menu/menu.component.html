@@ -1,5 +1,5 @@
 <button mat-button [matMenuTriggerFor]="menu">Menu</button>
 <mat-menu #menu="matMenu">
-  <button mat-menu-item>Users</button>
-  <button mat-menu-item>Upload</button>
+  <button mat-menu-item [routerLink] = "['/user/list']">Users</button>
+  <button mat-menu-item [routerLink] = "['/login']">Logout</button>
 </mat-menu>
