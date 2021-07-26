@@ -23,7 +23,7 @@ export class UserService {
   }
   create(user: User): Observable<User>
   {
-    return this.http.post(`${this.baseurl}`, user) as Observable<User>;
+    return this.http.post(`${this.baseurl}`,user) as Observable<User>;
   }
   edit(user: User): Observable<User>
   {
