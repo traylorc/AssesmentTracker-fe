@@ -8,11 +8,12 @@ button
 #uploadButton
 {
     float: right;
-    
-  
-   
 }
-/* div
+div
 {
-    display: inline block;
-} */
+    padding-left: 3px;
+}
+table
+{
+    border: solid lightgray;
+}

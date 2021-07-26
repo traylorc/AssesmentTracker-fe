@@ -11,34 +11,37 @@
         </span>
    
 
+<div>
 
-<table class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-    <thead>
-        <tr>
-            <th class="th-sm">Employee Id</th>
-            <th class="th-sm"><button (click) = "sortFn('employeeLastName')" class="btn btn-link">Employee Name</button></th>
-            <th class="th-sm"><button (click) = "sortFn('hireDate')" class="btn btn-link">Hire Date</button></th>
-            <th class="th-sm"><button (click) = "sortFn('division')" class="btn btn-link">Division</button></th>
-            <th class="th-sm"><button (click) = "sortFn('divisionParent')" class="btn btn-link">Division Parent</button></th>
-            <th class="th-sm"><button (click) = "sortFn('managerLastName')" class="btn btn-link">Manager Name</button></th>
-            <th class="th-sm">Test Attempt</th>
-            <th class="th-sm"><button (click) = "sortFn('attemptDate')" class="btn btn-link">Attempt Date</button></th>
-            <th class="th-sm">Score</th>
-            <th class="th-sm"><button (click) = "sortFn('assessment')" class="btn btn-link">Assessment</button></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor= "let d of iData | searchImportdata:searchCrit | sort:sortColumn:sortAsc">
-            <a routerLink = "/importdata/detail/{{d.employeeId}}/{{d.hireDate}}">{{d.employeeId}}</a>
-            <td>{{d.employeeFirstName}} {{d.employeeLastName}}</td>            
-            <td>{{d.hireDate | date: 'shortDate'}}</td>
-            <td>{{d.division}}</td>
-            <td>{{d.divisionParent}}</td>
-            <td>{{d.managerFirstName}} {{d.managerLastName}}</td>            
-            <td>{{d.testAttempt}}</td>
-            <td>{{d.attemptDate | date: 'shortDate'}}</td>
-            <td>{{d.score}}</td>
-            <td>{{d.assessment}}</td>
-        </tr>
-    </tbody>
-</table>
+    <table class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th class="th-sm">Employee Id</th>
+                <th class="th-sm"><button (click) = "sortFn('employeeLastName')" class="btn btn-link">Employee Name</button></th>
+                <th class="th-sm"><button (click) = "sortFn('hireDate')" class="btn btn-link">Hire Date</button></th>
+                <th class="th-sm"><button (click) = "sortFn('division')" class="btn btn-link">Division</button></th>
+                <th class="th-sm"><button (click) = "sortFn('divisionParent')" class="btn btn-link">Division Parent</button></th>
+                <th class="th-sm"><button (click) = "sortFn('managerLastName')" class="btn btn-link">Manager Name</button></th>
+                <th class="th-sm">Test Attempt</th>
+                <th class="th-sm"><button (click) = "sortFn('attemptDate')" class="btn btn-link">Attempt Date</button></th>
+                <th class="th-sm">Score</th>
+                <th class="th-sm"><button (click) = "sortFn('assessment')" class="btn btn-link">Assessment</button></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor= "let d of iData | searchImportdata:searchCrit | sort:sortColumn:sortAsc">
+                <a routerLink = "/importdata/detail/{{d.employeeId}}/{{d.hireDate}}">{{d.employeeId}}</a>
+                <td>{{d.employeeFirstName}} {{d.employeeLastName}}</td>            
+                <td>{{d.hireDate | date: 'shortDate'}}</td>
+                <td>{{d.division}}</td>
+                <td>{{d.divisionParent}}</td>
+                <td>{{d.managerFirstName}} {{d.managerLastName}}</td>            
+                <td>{{d.testAttempt}}</td>
+                <td>{{d.attemptDate | date: 'shortDate'}}</td>
+                <td>{{d.score}}</td>
+                <td>{{d.assessment}}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>
