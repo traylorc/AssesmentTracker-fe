@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { SystemService } from 'src/app/misc/system.service';
-import { ImportData } from '../import-data.class';
+import { ImportData } from '../importdata.class';
 import { ImportDataService } from '../import-data.service';
 
 @Component({

@@ -11,17 +11,19 @@ import { UserEditComponent } from './user/user-edit/user-edit.component';
 import { UserListComponent } from './user/user-list/user-list.component';
 import { LoginComponent } from './user/login/login.component';
 import { E404Component } from './misc/e404/e404.component';
-import { ImportDataCreateComponent } from './importData/import-data-create/import-data-create.component';
-import { ImportDataDetailComponent } from './importData/import-data-detail/import-data-detail.component';
-import { ImportDataEditComponent } from './importData/import-data-edit/import-data-edit.component';
-import { ImportDataListComponent } from './importData/import-data-list/import-data-list.component';
-import { ImportDataUploadComponent } from './importData/import-data-upload/import-data-upload.component';
+import { ImportDataCreateComponent } from './import-Data/import-data-create/import-data-create.component';
+import { ImportDataDetailComponent } from './import-Data/import-data-detail/import-data-detail.component';
+import { ImportDataEditComponent } from './import-Data/import-data-edit/import-data-edit.component';
+import { ImportDataListComponent } from './import-Data/import-data-list/import-data-list.component';
+import { ImportDataUploadComponent } from './import-Data/import-data-upload/import-data-upload.component';
 import { UploadComponent } from './upload/upload.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BannerComponent } from './misc/banner/banner.component';
 import { MenuComponent } from './menu/menu/menu.component';
 import { MatMenuModule} from '@angular/material/menu'
-import { MatButtonModule} from '@angular/material/button'
+import { MatButtonModule} from '@angular/material/button';
+import { SearchImportdataPipe } from './import-Data/search-importdata.pipe';
+import { SortPipe } from './misc/sort.pipe'
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { MatButtonModule} from '@angular/material/button'
     ImportDataUploadComponent,
     UploadComponent,
     BannerComponent,
-    MenuComponent
+    MenuComponent,
+    SearchImportdataPipe,
+    SortPipe
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule,
