@@ -19,6 +19,9 @@ import { ImportDataUploadComponent } from './importData/import-data-upload/impor
 import { UploadComponent } from './upload/upload.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BannerComponent } from './misc/banner/banner.component';
+import { MenuComponent } from './menu/menu/menu.component';
+import { MatMenuModule} from '@angular/material/menu'
+import { MatButtonModule} from '@angular/material/button'
 
 @NgModule({
   declarations: [
@@ -35,12 +38,13 @@ import { BannerComponent } from './misc/banner/banner.component';
     ImportDataListComponent,
     ImportDataUploadComponent,
     UploadComponent,
-    BannerComponent
+    BannerComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule, MatButtonModule, MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
