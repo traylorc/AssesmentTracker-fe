@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ImportData } from '../import-data.class';
+import { ImportData } from '../importdata.class';
 import { ImportDataService } from '../import-data.service';
 
 @Component({
@@ -8,6 +8,20 @@ import { ImportDataService } from '../import-data.service';
   styleUrls: ['./import-data-list.component.css']
 })
 export class ImportDataListComponent implements OnInit {
+
+  sortColumn: string = 'employeeId';
+  sortAsc: boolean = true;
+
+  sortFn(column: string): void{
+    if(column === this.sortColumn){
+      this.sortAsc = !this.sortAsc;
+      return;
+    }
+    this.sortColumn = column;
+    this.sortAsc = true;
+  }
+
+  searchCrit: string = '';
 
   iData: ImportData[] = [];
 

@@ -1,7 +1,7 @@
 import { HttpClient, HttpEventType } from '@angular/common/http';
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
-import { ImportDataService } from '../importData/import-data.service';
+import { ImportDataService } from '../import-Data/import-data.service';
 
 
 @Component({
