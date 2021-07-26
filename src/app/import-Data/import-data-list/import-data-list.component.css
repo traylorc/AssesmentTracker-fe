@@ -5,3 +5,14 @@ button
     font-weight: bold;
     padding-bottom: 0%;
 }
+#uploadButton
+{
+    float: right;
+    
+  
+   
+}
+/* div
+{
+    display: inline block;
+} */
