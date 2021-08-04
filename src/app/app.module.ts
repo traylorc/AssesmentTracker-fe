@@ -23,7 +23,12 @@ import { MenuComponent } from './menu/menu/menu.component';
 import { MatMenuModule} from '@angular/material/menu'
 import { MatButtonModule} from '@angular/material/button';
 import { SearchImportdataPipe } from './import-Data/search-importdata.pipe';
-import { SortPipe } from './misc/sort.pipe'
+import { SortPipe } from './misc/sort.pipe';
+import { ImportdataTableComponent } from './importdata-table/importdata-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort'
+
 
 @NgModule({
   declarations: [
@@ -43,12 +48,13 @@ import { SortPipe } from './misc/sort.pipe'
     BannerComponent,
     MenuComponent,
     SearchImportdataPipe,
-    SortPipe
+    SortPipe,
+    ImportdataTableComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule,
     AppRoutingModule,
-    BrowserAnimationsModule, MatButtonModule, MatMenuModule
+    BrowserAnimationsModule, MatButtonModule, MatMenuModule, MatTableModule, MatPaginatorModule, MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

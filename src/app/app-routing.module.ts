@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ImportDataDetailComponent } from './import-Data/import-data-detail/import-data-detail.component';
 import { ImportDataListComponent } from './import-Data/import-data-list/import-data-list.component';
 import { ImportDataUploadComponent } from './import-Data/import-data-upload/import-data-upload.component';
+import { ImportdataTableComponent } from './importdata-table/importdata-table.component';
 import { E404Component } from './misc/e404/e404.component';
 import { UploadComponent } from './upload/upload.component';
 import { LoginComponent } from './user/login/login.component';
@@ -25,6 +26,8 @@ const routes: Routes = [
   {path: 'importdata/list', component: ImportDataListComponent},
   {path: 'importdata/upload', component: ImportDataUploadComponent},
   {path:'importdata/detail/:emplid/:hiredate', component: ImportDataDetailComponent},
+
+  {path: 'importdata/table', component: ImportdataTableComponent},
 
   {path:'upload', component: UploadComponent},
 
