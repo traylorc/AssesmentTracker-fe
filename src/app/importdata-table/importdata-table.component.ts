@@ -16,6 +16,8 @@ export class ImportdataTableComponent implements AfterViewInit {
   @ViewChild(MatTable) table!: MatTable<ImportdataTableItem>;
   dataSource: ImportdataTableDataSource;
 
+  searchCrit: string = '';
+
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
   displayedColumns = ['employeeId',
                       'employeeFirstName',
