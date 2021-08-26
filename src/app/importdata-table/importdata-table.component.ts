@@ -33,7 +33,7 @@ export class ImportdataTableComponent implements AfterViewInit {
                       'assessment'
                       ];
 
-  constructor(private importdatasrvc : ImportDataService ) {
+  constructor(public importdatasrvc : ImportDataService ) {
     this.dataSource = new ImportdataTableDataSource(importdatasrvc);
   }
 

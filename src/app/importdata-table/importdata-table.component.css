@@ -5,3 +5,6 @@
   margin-right:2%;
 
 }
+.mat-row:hover .mat-cell {
+  border-color: black;
+}
